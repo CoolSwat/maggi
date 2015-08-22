@@ -1,0 +1,53 @@
+
+ {
+     "crawlerMap":{
+    "url": "http://www.caratlane.com/jewellery/harmony-diamond-bangle-jb00192-ygp900.html",
+    "type": "html",
+    "map": {
+        "title": {
+            "selector": ".product_name",
+            "extract": "text"
+        },
+        "price": {
+            "selector": ".special-price span[itemprop='price']",
+            "extract": "text"
+        },
+        "pricex": {
+            "selector": "",
+            "extract": "text"
+        },
+        "soldOutStatus": {
+            "selector": ".availability span",
+            "extract": "text"
+        },
+        "image":{
+          "selector":"a.elevatezoom-gallery",
+          "extract":"data-image"
+        },
+		"category":{
+			"selector":".breadcrumbs li",
+			"extract":"text"
+		},
+        "details":{
+          "selector":".product-description",
+          "extract":"text"
+        }
+		
+    }
+ }
+ ,
+ "sitemap":{
+       "siteMapUrl": "http://www.caratlane.com/products/sitemap.xml",
+        "levels": 1,
+        "type": "xml",
+		"model":"caratlane",
+		"level":1
+     
+ },
+ "indexName":"caratlane",
+ "siteName":"caratlane",
+ "ESServer":"http://52.74.178.178:9200/",
+ "DBServer":"198.12.73.13",
+ "productsTable":"products5",
+ "EsDbBatchSize":500
+}
